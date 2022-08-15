@@ -102,7 +102,6 @@ class LostAndFoundViewModel : ViewModel() {
                         listaDeepImageSearch = gson.fromJson(response.body!!.string(), DeepImageSearchResponse::class.java)
                     }
 
-
                     Log.d("Response",lista.toString())
                     Log.d("Response",listaDeepImageSearch.toString())
                     loading.postValue(false)
